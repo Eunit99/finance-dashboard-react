@@ -52,50 +52,23 @@ function App() {
       <BrowserRouter></BrowserRouter>
 
       <HashRouter>
-        {/* <div className="d-sm-none d-md-flex"><Loader /></div> */}
         <Routes>
-          {/* show this if the person is not logged in */}
-          {!localStorage.getItem("adminId") ? (
-            <> <Route exact path={"/Login"} element={<AuthMainContainer />}>
-              <Route
-                exact
-                path={"PasswordReset"}
-                element={<PasswordReset />}
-              ></Route>
-
-              <Route
-                exact
-                path={"OTPVerification"}
-                element={<OTPVerification />}
-              ></Route>
-
-              <Route
-                exact
-                path={"NewPassword"}
-                element={<NewPassword />}
-              ></Route>
+          <>
+            <Route exact path={"/"} element={<Dashboard />}>
+              <Route exact path={"Transactions"} element={<Transactions />}></Route>
+              <Route exact path={"TransactionsEditsReport"} element={<TransactionsEditsReport />}></Route>
+              <Route exact path={"MyBlinkers"} element={<AllBlinkers />}></Route>
+              <Route exact path={"Guardians"} element={<Guardians />}></Route>
+              <Route exact path={"BlinkerDetails/:id"} element={<BlinkerDetails />}></Route>
+              <Route exact path={"Blinkers"} element={<Blinkers />}></Route>
+              <Route exact path={"Bursars"} element={<Bursars />}></Route>
+              <Route exact path={"Merchants"} element={<Merchants />}></Route>
+              <Route exact path={"SchoolAdmin"} element={<SchoolAdmin />}></Route>
+              <Route exact path={"MapView"} element={<MapView />}></Route>
+              <Route exact path={"MapView2"} element={<MapView2 />}></Route>
             </Route>
-              <Route path="*" element={<Navigate to="/Login" />}></Route>
-            </>
-          ) : (
-            <>
-              <Route exact path={"/"} element={<Dashboard />}>
-                <Route exact path={"Transactions"} element={<Transactions />}></Route>
-                <Route exact path={"TransactionsEditsReport"} element={<TransactionsEditsReport />}></Route>
-                <Route exact path={"MyBlinkers"} element={<AllBlinkers />}></Route>
-                <Route exact path={"Guardians"} element={<Guardians />}></Route>
-                <Route exact path={"BlinkerDetails/:id"} element={<BlinkerDetails />}></Route>
-                <Route exact path={"Blinkers"} element={<Blinkers />}></Route>
-                <Route exact path={"Bursars"} element={<Bursars />}></Route>
-                <Route exact path={"Merchants"} element={<Merchants />}></Route>
-                <Route exact path={"SchoolAdmin"} element={<SchoolAdmin />}></Route>
-                <Route exact path={"MapView"} element={<MapView />}></Route>
-                <Route exact path={"MapView2"} element={<MapView2 />}></Route>
-              </Route>
-              <Route path="*" element={<Navigate to="/" />}></Route>
-            </>
-          )}
-          {/* go to the dashboard page */}
+            <Route path="*" element={<Navigate to="/" />}></Route>
+          </>
         </Routes>
       </HashRouter>
       <Helmet>

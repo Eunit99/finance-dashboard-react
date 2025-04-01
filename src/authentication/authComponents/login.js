@@ -8,7 +8,6 @@ import AuthService from "../../services/auth.service";
 
 
 const Login = () => {
-  //alert("we are at the login page "+theParentId)
 
 
   const [username, setUsername] = useState("");
@@ -21,18 +20,27 @@ const Login = () => {
 
 
   const loginStart = (event) => {
+
+
+    localStorage.setItem("adminId", username ?? "tryveadmin");
+    let loggedadminId = localStorage.getItem("adminId");
+    console.log(loggedadminId);
+
+
+    window.location.reload();
+
     setLoginClicked(true)
     event.preventDefault();
     let data = {
       email: username,
       password: passWord,
-      userType: "BlinkAdmin",
+      userType: "TryveAdmin",
     };
 
     let data2 = {
       msisdn: username,
       password: passWord,
-      userType: "BlinkAdmin",
+      userType: "TryveAdmin",
     };
     console.log(data)
     AuthService.logIn(data).then((res) => {

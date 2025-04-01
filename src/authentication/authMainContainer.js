@@ -106,7 +106,7 @@ const AuthMainContainer = () => {
 
                     <div className="mt-4 mt-md-5 text-center">
                       <p className="mb-0">©
-                        <span className="this-year"></span> Blink! <strong>Admin Portal</strong></p>
+                        <span className="this-year"></span> Tryve! <strong>Financial Dashboard</strong></p>
                     </div>
                   </div>
 

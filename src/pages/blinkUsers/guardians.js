@@ -423,18 +423,18 @@ const Guardians=()=>{
             <button  data-bs-toggle="modal" data-bs-target="#associates-details-modal"  class="btn btn-primary d-none account-details-button">Click</button>
             <Associates clickedAccountType={blinkUserType} clickedAAssociates={myAssociates} clickedName={guardiansName} clickedUserType={usertype} />
             <Helmet>
-                <title>Blink! Admin | Blink Users</title>
+                <title>Tryve! Admin | Blink Users</title>
             </Helmet> 
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
                         <div className="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 className="mb-sm-0 font-size-18">Blink Guardians</h4>
+                            <h4 className="mb-sm-0 font-size-18">Tryve Guardians</h4>
 
                             <div className="page-title-right">
                                 <ol className="breadcrumb m-0">
                                     <li className="breadcrumb-item"><Link to="/">Dashboards</Link></li>
-                                    <li className="breadcrumb-item"><a href="#">Blink Users</a></li>
+                                    <li className="breadcrumb-item"><a href="#">Tryve Users</a></li>
                                     <li className="breadcrumb-item active"><Link to="/">Guardians</Link></li>
                                 </ol>
                             </div>
@@ -494,7 +494,7 @@ const Guardians=()=>{
                                                         }
                                                     }}
                                                     >
-                                                        <option value="blinkId">Search By Blink ID</option>
+                                                        <option value="blinkId">Search By Tryvr ID</option>
                                                         <option value="email">Search By Email</option>
                                                         <option value="msisdn">Search By Phone Number</option>                                                
                                                 </select>

@@ -10,19 +10,19 @@ This project is a responsive dashboard UI for a Fintech Savings & Investment App
 
 🔹 **Deliverables:**
 
-- Live Demo (Vercel)
-- GitHub repository
-- Short Loom video showcasing responsiveness
+- Live Demo [(Vercel)](https://finance-dashboard-react.vercel.app/): [https://finance-dashboard-react.vercel.app/](https://finance-dashboard-react.vercel.app/)
+- [GitHub repository](https://github.com/Eunit99/finance-dashboard-react): [https://github.com/Eunit99/finance-dashboard-react](https://github.com/Eunit99/finance-dashboard-react)
+- [Short Loom video showcasing responsiveness](https://i.postimg.cc/tJ0Czf1Q/emmanuel-tryve-assessment.gif): [https://i.postimg.cc/tJ0Czf1Q/emmanuel-tryve-assessment.gif](https://i.postimg.cc/tJ0Czf1Q/emmanuel-tryve-assessment.gif)
 
 🔹 **Key Skills Assessed:** UI Implementation, State Management, API Integration.
 
 ## Live Demo
 
-[Link to Live Demo (Vercel)]
+[Link to Live Demo Vercel](https://finance-dashboard-react.vercel.app/)]
 
 ## GitHub Repository
 
-[Link to GitHub Repository]
+[Link to GitHub Repository](https://github.com/Eunit99/finance-dashboard-react)
 
 ## Loom Video
 
@@ -42,5 +42,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Clone the repository:
 
    ```bash
-   git clone [Your GitHub Repository Link]
-   cd [Your Project Directory]
+   git clone [https://github.com/Eunit99/finance-dashboard-react.git](https://github.com/Eunit99/finance-dashboard-react.git)
+   cd finance-dashboard-react
